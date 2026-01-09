@@ -72,7 +72,7 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     placeholder="Products search karein..."
-                    className="w-full bg-black/40 border border-white/10 rounded-2xl p-4 pl-12 pr-12 focus:border-cyan-500 outline-none transition-all text-white placeholder:text-gray-500"
+                    className="w-full bg-[var(--background)]/40 border border-[var(--glass-border)] rounded-2xl p-4 pl-12 pr-12 focus:border-cyan-500 outline-none transition-all text-[var(--foreground)] placeholder:text-gray-500"
                   />
                   <button
                     onClick={onClose}

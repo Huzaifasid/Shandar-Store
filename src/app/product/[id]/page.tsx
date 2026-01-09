@@ -51,7 +51,7 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
   const galleryImages = [product.image, product.image, product.image, product.image];
 
   return (
-    <div className="min-h-screen bg-[#050608] pb-24">
+    <div className="min-h-screen bg-[var(--background)] pb-24 transition-colors duration-300">
       {/* Background Glow */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[120px]" />
@@ -61,9 +61,9 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
       <div className="container mx-auto px-6 pt-12 relative z-10">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm text-gray-500 mb-8">
-          <Link href="/" className="hover:text-white transition-colors">Home</Link>
+          <Link href="/" className="hover:text-[var(--foreground)] transition-colors">Home</Link>
           <span>/</span>
-          <Link href="/#products" className="hover:text-white transition-colors">Products</Link>
+          <Link href="/#products" className="hover:text-[var(--foreground)] transition-colors">Products</Link>
           <span>/</span>
           <span className="text-cyan-400">{product.name}</span>
         </div>
@@ -155,7 +155,7 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
                   <span className="text-gray-500 text-xs font-bold ml-2">4.8 (124 REVIEWS)</span>
                 </div>
               </div>
-              <h1 className="font-display text-4xl md:text-6xl font-black text-white leading-tight">
+              <h1 className="font-display text-4xl md:text-6xl font-black text-[var(--foreground)] leading-tight">
                 {product.name}
               </h1>
               <p className="text-gray-400 text-lg font-light mt-6 leading-relaxed">
@@ -169,7 +169,7 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
                 <div>
                   <span className="text-gray-500 text-sm">Price</span>
                   <div className="flex items-end gap-3">
-                    <span className="text-4xl font-display font-black text-white">
+                    <span className="text-4xl font-display font-black text-[var(--foreground)]">
                       ${product.price.toLocaleString()}
                     </span>
                     <span className="text-gray-600 line-through text-lg mb-1">
@@ -244,7 +244,7 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
               ].map((badge, i) => (
                 <div key={i} className="glass rounded-2xl p-4 text-center">
                   <div className="text-cyan-400 mx-auto mb-2">{badge.icon}</div>
-                  <h5 className="text-white font-bold text-xs uppercase tracking-wider">{badge.title}</h5>
+                  <h5 className="text-[var(--foreground)] font-bold text-xs uppercase tracking-wider">{badge.title}</h5>
                   <p className="text-gray-500 text-[10px]">{badge.desc}</p>
                 </div>
               ))}
@@ -442,7 +442,7 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
             <div className="flex items-end justify-between mb-12">
               <div>
                 <span className="text-cyan-500 text-[10px] font-black tracking-[0.3em] uppercase block mb-4">You might also like</span>
-                <h2 className="font-display text-4xl md:text-5xl font-black text-white">Related Products</h2>
+                <h2 className="font-display text-4xl md:text-5xl font-black text-[var(--foreground)]">Related Products</h2>
               </div>
               <Link href="/#products" className="text-gray-400 hover:text-cyan-400 transition-colors text-sm font-bold uppercase tracking-wider">
                 View All →

@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import { useCartStore } from '@/store/useCartStore';
 import CartDrawer from './CartDrawer';
 import SearchModal from './SearchModal';
+import ThemeToggle from './ThemeToggle';
 import Link from 'next/link';
 
 const navLinks = [
@@ -43,7 +44,7 @@ export default function Navbar() {
             : 'glass-morphism shadow-2xl shadow-cyan-500/5'
         }`}>
           <div className="flex items-center gap-12">
-            <Link href="/" className="font-display text-xl font-black tracking-tighter text-white hover:text-cyan-400 transition-colors">
+            <Link href="/" className="font-display text-xl font-black tracking-tighter text-[var(--foreground)] hover:text-cyan-400 transition-colors">
               SHANDAR STORE
             </Link>
             <div className="hidden md:flex gap-8 text-[10px] font-bold tracking-[0.2em] uppercase text-gray-400">
@@ -51,7 +52,7 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="hover:text-white transition-colors relative group"
+                  className="hover:text-[var(--foreground)] transition-colors relative group"
                 >
                   {link.name}
                   <span className="absolute -bottom-1 left-0 w-0 h-px bg-cyan-400 group-hover:w-full transition-all duration-300" />
@@ -68,8 +69,11 @@ export default function Navbar() {
               onClick={() => setIsSearchOpen(true)}
               className="hidden md:flex p-2.5 rounded-full hover:bg-white/10 transition-all"
             >
-              <Search size={18} className="text-gray-400 hover:text-white" />
+              <Search size={18} className="text-gray-400 hover:text-[var(--foreground)]" />
             </motion.button>
+            
+            {/* Theme Toggle */}
+            <ThemeToggle />
             
             {/* Cart Button */}
             <motion.button 
@@ -78,7 +82,7 @@ export default function Navbar() {
               onClick={() => setIsCartOpen(true)}
               className="p-2.5 rounded-full hover:bg-white/10 transition-all relative group"
             >
-              <ShoppingBag size={20} className="text-white group-hover:text-cyan-400" />
+              <ShoppingBag size={20} className="text-[var(--foreground)] group-hover:text-cyan-400" />
               {mounted && getTotalItems() > 0 && (
                 <motion.span
                   initial={{ scale: 0 }}
@@ -126,7 +130,7 @@ export default function Navbar() {
                     key={link.name}
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className="text-sm font-bold uppercase tracking-widest text-gray-400 hover:text-white transition-colors py-2"
+                    className="text-sm font-bold uppercase tracking-widest text-gray-400 hover:text-[var(--foreground)] transition-colors py-2"
                   >
                     {link.name}
                   </Link>

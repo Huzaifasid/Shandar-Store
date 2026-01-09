@@ -325,7 +325,8 @@ export default function Home() {
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-cyan-500/10" />
-          <div className="absolute inset-0 bg-[#050608]/80" />
+          <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-cyan-500/10" />
+          <div className="absolute inset-0 bg-[var(--background)]/80" />
         </div>
         <div className="container mx-auto px-6 relative z-10">
           <motion.div
@@ -415,11 +416,11 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer id="about" className="py-24 border-t border-white/5">
+      <footer id="about" className="py-24 border-t border-[var(--glass-border)]">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-12 text-sm text-gray-500">
             <div className="md:col-span-2 space-y-6">
-              <h2 className="font-display text-white text-3xl font-black tracking-tighter">SHANDAR STORE</h2>
+              <h2 className="font-display text-[var(--foreground)] text-3xl font-black tracking-tighter">SHANDAR STORE</h2>
               <p className="max-w-sm">Pakistan mein sabse trusted aur quality electronics store. 2024 se aap ki khidmat mein.</p>
               <div className="flex gap-4">
                 {['X', 'In', 'Ig', 'Yt'].map((social) => (
@@ -430,7 +431,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <h5 className="text-white font-bold mb-6 uppercase tracking-widest text-xs">Products</h5>
+              <h5 className="text-[var(--foreground)] font-bold mb-6 uppercase tracking-widest text-xs">Products</h5>
               <ul className="space-y-3">
                 <li><a href="#" className="hover:text-cyan-400 transition-colors">Quantum Phone</a></li>
                 <li><a href="#" className="hover:text-cyan-400 transition-colors">Zenith Laptop</a></li>
@@ -439,7 +440,7 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h5 className="text-white font-bold mb-6 uppercase tracking-widest text-xs">Company</h5>
+              <h5 className="text-[var(--foreground)] font-bold mb-6 uppercase tracking-widest text-xs">Company</h5>
               <ul className="space-y-3">
                 <li><Link href="/about" className="hover:text-cyan-400 transition-colors">About Us</Link></li>
                 <li><a href="#" className="hover:text-cyan-400 transition-colors">Careers</a></li>
@@ -448,7 +449,7 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h5 className="text-white font-bold mb-6 uppercase tracking-widest text-xs">Support</h5>
+              <h5 className="text-[var(--foreground)] font-bold mb-6 uppercase tracking-widest text-xs">Support</h5>
               <ul className="space-y-3">
                 <li><a href="#" className="hover:text-cyan-400 transition-colors">Help Center</a></li>
                 <li><a href="#" className="hover:text-cyan-400 transition-colors">Warranty</a></li>
@@ -460,9 +461,9 @@ export default function Home() {
           <div className="pt-12 mt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] tracking-widest uppercase text-gray-600">
             <span>&copy; 2026 Shandar Store Pakistan. Aap ki pasand, hamari zimmedari.</span>
             <div className="flex gap-8">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
+              <a href="#" className="hover:text-[var(--foreground)] transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-[var(--foreground)] transition-colors">Terms of Service</a>
+              <a href="#" className="hover:text-[var(--foreground)] transition-colors">Cookie Policy</a>
             </div>
           </div>
         </div>

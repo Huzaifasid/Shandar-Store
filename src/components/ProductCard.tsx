@@ -60,7 +60,7 @@ export default function ProductCard({ product }: { product: Product }) {
         <div className="flex items-center justify-between pt-2">
           <div className="flex flex-col">
             <span className="text-[10px] text-gray-500 font-bold tracking-widest uppercase mb-1">Price</span>
-            <span className="text-2xl font-black text-white">
+            <span className="text-2xl font-black text-[var(--foreground)]">
               ${product.price.toLocaleString()}
             </span>
           </div>
@@ -72,7 +72,7 @@ export default function ProductCard({ product }: { product: Product }) {
               addItem(product);
             }}
 
-            className="p-4 rounded-2xl bg-white/5 border border-white/10 text-white transition-all shadow-xl shadow-transparent hover:shadow-cyan-500/20"
+            className="p-4 rounded-2xl bg-white/5 border border-white/10 text-[var(--foreground)] transition-all shadow-xl shadow-transparent hover:shadow-cyan-500/20"
           >
             <ShoppingCart size={20} />
           </motion.button>

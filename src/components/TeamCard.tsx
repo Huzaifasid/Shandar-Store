@@ -47,7 +47,7 @@ export default function TeamCard({ member, index = 0 }: { member: TeamMember; in
         
         {/* Info */}
         <div className="text-center">
-          <h4 className="font-display text-xl font-black text-white mb-1 group-hover:text-cyan-400 transition-colors">
+          <h4 className="font-display text-xl font-black text-[var(--foreground)] mb-1 group-hover:text-cyan-400 transition-colors">
             {member.name}
           </h4>
           <p className="text-cyan-400 text-sm font-bold uppercase tracking-widest mb-4">

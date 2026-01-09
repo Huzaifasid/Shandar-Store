@@ -7,6 +7,7 @@ import Preloader from "@/components/Preloader";
 import BackToTop from "@/components/BackToTop";
 import NewsletterPopup from "@/components/NewsletterPopup";
 import PromoBanner from "@/components/PromoBanner";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
@@ -31,13 +32,15 @@ export default function RootLayout({
           outfit.variable
         )}
       >
-        <Preloader />
-        <PromoBanner />
-        <ScrollProgress />
-        <Navbar />
-        {children}
-        <BackToTop />
-        <NewsletterPopup />
+        <ThemeProvider>
+          <Preloader />
+          <PromoBanner />
+          <ScrollProgress />
+          <Navbar />
+          {children}
+          <BackToTop />
+          <NewsletterPopup />
+        </ThemeProvider>
       </body>
     </html>
   );
