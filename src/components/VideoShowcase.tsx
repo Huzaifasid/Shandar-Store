@@ -43,7 +43,7 @@ export default function VideoShowcase() {
             transition={{ delay: 0.2 }}
             className="text-gray-400 max-w-lg mx-auto"
           >
-            Watch how Aura Tech is revolutionizing the future of technology.
+            Watch how Shandar Store is revolutionizing the future of technology.
           </motion.p>
         </div>
         

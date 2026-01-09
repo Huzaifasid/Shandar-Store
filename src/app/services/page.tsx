@@ -15,7 +15,7 @@ const services = [
   {
     icon: <Settings size={32} />,
     title: "Device Setup",
-    description: "Professional setup and data migration for your new Aura Tech device.",
+    description: "Professional setup and data migration for your new Shandar Store device.",
     features: ["Complete data transfer", "App installation", "Personalized settings", "Tutorial walkthrough"],
     color: "purple",
   },
@@ -104,7 +104,7 @@ export default function ServicesPage() {
               <span className="text-gradient">Care</span>
             </h1>
             <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light">
-              Exceptional support and services to ensure your Aura Tech experience 
+              Exceptional support and services to ensure your Shandar Store experience 
               is nothing short of extraordinary.
             </p>
           </motion.div>

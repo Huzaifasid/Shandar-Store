@@ -306,7 +306,7 @@ export default function Home() {
               Meet Our <span className="text-gradient">Team</span>
             </h2>
             <p className="text-gray-400 max-w-lg mx-auto">
-              The brilliant minds behind Aura Tech's revolutionary products.
+              The brilliant minds behind Shandar Store's revolutionary products.
             </p>
           </motion.div>
           
@@ -361,7 +361,7 @@ export default function Home() {
                 Ready to <span className="text-gradient-rainbow">Transform</span><br />Your Tech?
               </h2>
               <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10">
-                Join the elite circle of Aura Tech pioneers. Get exclusive early access to new products and special member pricing.
+                Join the elite circle of Shandar Store pioneers. Get exclusive early access to new products and special member pricing.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.button
@@ -398,7 +398,7 @@ export default function Home() {
               <h3 className="font-display text-3xl font-black mb-6">Stay Ahead</h3>
               <p className="text-gray-400 mb-8">Join the inner circle and be the first to experience our upcoming releases.</p>
               <div className="space-y-4 text-sm text-gray-500">
-                <div className="flex items-center gap-3"><Mail size={16} className="text-cyan-400" /> newsletter@auratech.io</div>
+                <div className="flex items-center gap-3"><Mail size={16} className="text-cyan-400" /> newsletter@shandarstore.io</div>
                 <div className="flex items-center gap-3"><MapPin size={16} className="text-cyan-400" /> Silicon Valley, CA</div>
                 <div className="flex items-center gap-3"><Users size={16} className="text-cyan-400" /> 2,400+ Pioneers</div>
               </div>

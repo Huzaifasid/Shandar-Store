@@ -87,7 +87,7 @@ export default function FAQAccordion({ faqs }: { faqs: FAQ[] }) {
               transition={{ delay: 0.2 }}
               className="text-gray-400 max-w-lg mx-auto"
             >
-              Everything you need to know about Aura Tech products and services.
+              Everything you need to know about Shandar Store products and services.
             </motion.p>
           </div>
           

@@ -1,13 +1,13 @@
 export const faqs = [
   {
     id: 1,
-    question: "What makes Aura Tech products different from competitors?",
+    question: "What makes Shandar Store products different from competitors?",
     answer: "Our products feature proprietary Neural Link technology, hand-crafted premium materials, and a relentless focus on user experience. Each device undergoes 500+ quality checks before shipping.",
   },
   {
     id: 2,
     question: "What is your warranty policy?",
-    answer: "All Aura Tech products come with a 3-year comprehensive warranty covering hardware defects, software issues, and accidental damage. Premium Care members get lifetime coverage.",
+    answer: "All Shandar Store products come with a 3-year comprehensive warranty covering hardware defects, software issues, and accidental damage. Premium Care members get lifetime coverage.",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const faqs = [
   {
     id: 6,
     question: "How do I track my order?",
-    answer: "Once shipped, you'll receive a tracking number via email and SMS. You can also track your order in real-time through your Aura Tech account dashboard.",
+    answer: "Once shipped, you'll receive a tracking number via email and SMS. You can also track your order in real-time through your Shandar Store account dashboard.",
   },
 ];
 
@@ -42,7 +42,7 @@ export const services = [
   {
     id: 2,
     title: "Device Setup",
-    description: "Professional setup and data migration for your new Aura Tech device.",
+    description: "Professional setup and data migration for your new Shandar Store device.",
     icon: "settings",
     features: ["Complete data transfer", "App installation", "Personalized settings"],
   },

@@ -5,7 +5,7 @@ export const testimonials = [
     role: "Tech Entrepreneur",
     avatar: "/assets/avatars/avatar1.jpg",
     content:
-      "Aura Tech has completely transformed how I work. The Zenith Laptop Pro is the most powerful machine I've ever used. Worth every penny.",
+      "Shandar Store has completely transformed how I work. The Zenith Laptop Pro is the most powerful machine I've ever used. Worth every penny.",
     rating: 5,
     company: "NexGen Labs",
   },
@@ -35,7 +35,7 @@ export const testimonials = [
     role: "Photographer",
     avatar: "/assets/avatars/avatar4.jpg",
     content:
-      "The Aura Camera Z100 captures colors I didn't even know existed. The 100MP sapphire lens is simply unmatched in the industry.",
+      "The Shandar Store Camera Z100 captures colors I didn't even know existed. The 100MP sapphire lens is simply unmatched in the industry.",
     rating: 5,
     company: "Lens & Light Studio",
   },
