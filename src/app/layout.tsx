@@ -12,9 +12,9 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export const metadata = {
-  title: "Aura Tech | Premium Gadget Showcase",
-  description: "Experience the aura of innovation with our curated selection of high-end gadgets.",
-  keywords: "technology, gadgets, premium, electronics, innovation",
+  title: "Shandar Store | Pakistan's Best Electronics",
+  description: "Pakistan ki sabse behtareen quality electronics aur latest gadgets. Trusted online shopping with fast delivery.",
+  keywords: "electronics pakistan, gadgets, mobile phones, laptops, online shopping pakistan",
 };
 
 export default function RootLayout({

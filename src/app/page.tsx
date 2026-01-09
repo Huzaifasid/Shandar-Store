@@ -86,12 +86,12 @@ export default function Home() {
               <Sparkles size={14} className="animate-pulse" />
             </motion.div>
             <h1 className="font-display text-5xl md:text-8xl font-black mb-8 leading-[1.1]">
-              <span className="text-gradient">Experience the</span> <br />
-              <span className="text-gradient-rainbow">Aura of Innovation</span>
+              <span className="text-gradient">Pakistan's Most</span> <br />
+              <span className="text-gradient-rainbow">Shandar Collection</span>
             </h1>
             <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light">
-              Where premium design meets unparalleled performance. 
-              Discover a new standard of luxury electronics.
+              Pakistan ki sabse behtareen quality aur latest technology. 
+              Apne sapnon ka gadget yahan se hasil karein.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.a
@@ -310,7 +310,7 @@ export default function Home() {
             </p>
           </motion.div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {team.map((member, index) => (
               <TeamCard key={member.id} member={member} index={index} />
             ))}
@@ -419,8 +419,8 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-12 text-sm text-gray-500">
             <div className="md:col-span-2 space-y-6">
-              <h2 className="font-display text-white text-3xl font-black tracking-tighter">AURA TECH</h2>
-              <p className="max-w-sm">Setting the gold standard for high-performance minimalist technology since 2024. Where innovation meets elegance.</p>
+              <h2 className="font-display text-white text-3xl font-black tracking-tighter">SHANDAR STORE</h2>
+              <p className="max-w-sm">Pakistan mein sabse trusted aur quality electronics store. 2024 se aap ki khidmat mein.</p>
               <div className="flex gap-4">
                 {['X', 'In', 'Ig', 'Yt'].map((social) => (
                   <a key={social} href="#" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-cyan-500 hover:text-black transition-all">
@@ -458,7 +458,7 @@ export default function Home() {
             </div>
           </div>
           <div className="pt-12 mt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] tracking-widest uppercase text-gray-600">
-            <span>&copy; 2026 Aura Tech Industries. Designed for the Future.</span>
+            <span>&copy; 2026 Shandar Store Pakistan. Aap ki pasand, hamari zimmedari.</span>
             <div className="flex gap-8">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

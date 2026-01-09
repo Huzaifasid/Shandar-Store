@@ -5,6 +5,7 @@ import { Menu, X, ShoppingBag, Search, ChevronDown } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useCartStore } from '@/store/useCartStore';
 import CartDrawer from './CartDrawer';
+import SearchModal from './SearchModal';
 import Link from 'next/link';
 
 const navLinks = [
@@ -17,6 +18,7 @@ const navLinks = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const getTotalItems = useCartStore((state) => state.getTotalItems);
   const [mounted, setMounted] = useState(false);
@@ -42,7 +44,7 @@ export default function Navbar() {
         }`}>
           <div className="flex items-center gap-12">
             <Link href="/" className="font-display text-xl font-black tracking-tighter text-white hover:text-cyan-400 transition-colors">
-              AURA TECH
+              SHANDAR STORE
             </Link>
             <div className="hidden md:flex gap-8 text-[10px] font-bold tracking-[0.2em] uppercase text-gray-400">
               {navLinks.map((link) => (
@@ -63,6 +65,7 @@ export default function Navbar() {
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              onClick={() => setIsSearchOpen(true)}
               className="hidden md:flex p-2.5 rounded-full hover:bg-white/10 transition-all"
             >
               <Search size={18} className="text-gray-400 hover:text-white" />
@@ -95,14 +98,16 @@ export default function Navbar() {
               {isOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
             
-            {/* Pre-Order Button */}
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="hidden md:block px-6 py-2.5 rounded-full bg-white text-black text-[10px] font-black tracking-widest uppercase hover:bg-cyan-400 hover:shadow-lg hover:shadow-cyan-500/30 transition-all"
-            >
-              Pre-Order
-            </motion.button>
+            {/* Shop Now Button */}
+            <Link href="/#products">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="hidden md:block px-6 py-2.5 rounded-full bg-white text-black text-[10px] font-black tracking-widest uppercase hover:bg-cyan-400 hover:shadow-lg hover:shadow-cyan-500/30 transition-all"
+              >
+                Shop Now
+              </motion.button>
+            </Link>
           </div>
         </div>
         
@@ -138,6 +143,7 @@ export default function Navbar() {
       </nav>
 
       <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
+      <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
     </>
   );
 }

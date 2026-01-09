@@ -1,46 +1,32 @@
 export const team = [
   {
     id: 1,
-    name: "David Chen",
+    name: "Huzaifa Siddiqui",
     role: "Founder & CEO",
     avatar: "/assets/team/ceo.jpg",
-    bio: "Visionary leader with 20+ years in tech innovation. Former VP at Apple.",
+    bio: "Shandar Store ke founder aur visionary leader. Technology aur customer service mein expert.",
     social: {
-      twitter: "https://twitter.com/davidchen",
-      linkedin: "https://linkedin.com/in/davidchen",
+      linkedin: "https://www.linkedin.com/in/huzaifa-siddiqui0328",
     },
   },
   {
     id: 2,
-    name: "Maria Santos",
-    role: "Chief Design Officer",
+    name: "Muhammad Bin Farooq",
+    role: "Chief Operations Officer",
     avatar: "/assets/team/cdo.jpg",
-    bio: "Award-winning designer who believes in the marriage of form and function.",
+    bio: "Operations aur logistics expert. Pakistan bhar mein fast delivery ensure karte hain.",
     social: {
-      twitter: "https://twitter.com/mariasantos",
-      linkedin: "https://linkedin.com/in/mariasantos",
+      linkedin: "https://www.linkedin.com/in/muhammadbinfarooq",
     },
   },
   {
     id: 3,
-    name: "James Wu",
-    role: "Chief Technology Officer",
+    name: "Muhammad Nizam",
+    role: "Head of Customer Service",
     avatar: "/assets/team/cto.jpg",
-    bio: "Engineering genius behind our Neural Link technology. MIT PhD.",
+    bio: "Customer satisfaction hamari priority. 24/7 support aur quality service provide karte hain.",
     social: {
-      twitter: "https://twitter.com/jameswu",
-      linkedin: "https://linkedin.com/in/jameswu",
-    },
-  },
-  {
-    id: 4,
-    name: "Elena Petrova",
-    role: "VP of Product",
-    avatar: "/assets/team/vp.jpg",
-    bio: "Product strategist who turns customer needs into revolutionary features.",
-    social: {
-      twitter: "https://twitter.com/elenapetrova",
-      linkedin: "https://linkedin.com/in/elenapetrova",
+      linkedin: "https://www.linkedin.com/in/muhammad-nizam-uddin-237682282/",
     },
   },
 ];

@@ -94,7 +94,7 @@ export default function VideoModal({ isOpen, onClose }: VideoModalProps) {
                     transition={{ delay: 0.2 }}
                     className="font-display text-3xl md:text-5xl font-black text-white text-center mb-4"
                   >
-                    <span className="text-gradient">AURA TECH</span> Keynote 2026
+                    <span className="text-gradient">SHANDAR STORE</span> Grand Launch 2026
                   </motion.h2>
                   
                   <motion.p
@@ -103,7 +103,7 @@ export default function VideoModal({ isOpen, onClose }: VideoModalProps) {
                     transition={{ delay: 0.3 }}
                     className="text-gray-400 text-center max-w-lg px-4"
                   >
-                    Discover the future of technology. Introducing our most innovative products yet.
+                    Pakistan ke liye latest aur shandar products. Dekhiye hamara naya collection.
                   </motion.p>
                   
                   {/* Duration Badge */}

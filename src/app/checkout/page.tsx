@@ -345,7 +345,7 @@ export default function CheckoutPage() {
                         backgroundSize: '20px 20px'
                       }} />
                       <div className="relative z-10">
-                        <div className="text-lg font-bold mb-8">AURA TECH</div>
+                        <div className="text-lg font-bold mb-8">SHANDAR STORE</div>
                         <div className="font-mono text-xl tracking-widest mb-6">
                           {paymentInfo.cardNumber || '•••• •••• •••• ••••'}
                         </div>

@@ -59,8 +59,8 @@ export default function Preloader() {
               transition={{ delay: 0.3 }}
               className="mt-8 font-display text-2xl font-black tracking-tighter"
             >
-              <span className="text-gradient">AURA</span>{" "}
-              <span className="text-white">TECH</span>
+              <span className="text-gradient">SHANDAR</span>{" "}
+              <span className="text-white">STORE</span>
             </motion.h1>
             
             {/* Loading Text */}

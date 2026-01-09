@@ -7,19 +7,19 @@ import { team } from '@/data/team';
 import Link from 'next/link';
 
 const timeline = [
-  { year: "2019", title: "The Vision", description: "Founded in a garage with a dream to revolutionize consumer electronics." },
-  { year: "2020", title: "First Product", description: "Launched Quantum Phone X1, selling out in 48 hours." },
-  { year: "2021", title: "Global Expansion", description: "Expanded to 50+ countries with dedicated R&D centers." },
-  { year: "2022", title: "Neural Link Tech", description: "Patented our revolutionary Neural Link processing technology." },
-  { year: "2023", title: "Sustainability Pledge", description: "Achieved carbon neutrality across all operations." },
-  { year: "2024", title: "The Future", description: "Serving 50,000+ customers with 120+ product variants." },
+  { year: "2020", title: "Shuruaat", description: "Karachi mein ek chhoti si dukaan se shuru kiya." },
+  { year: "2021", title: "Pehla Milestone", description: "1000+ khush customers aur 5-star reviews." },
+  { year: "2022", title: "Online Expansion", description: "Website launch aur Pakistan bhar mein delivery shuru ki." },
+  { year: "2023", title: "Trust Badha", description: "10,000+ products bechay aur 98% customer satisfaction hasil ki." },
+  { year: "2024", title: "New Heights", description: "Multiple cities mein service centers khol diye." },
+  { year: "2026", title: "Shandar Future", description: "50,000+ customers aur Pakistan ka most trusted electronics store." },
 ];
 
 const values = [
-  { icon: <Award size={32} />, title: "Excellence", description: "We never settle for good enough. Every detail matters in our pursuit of perfection." },
-  { icon: <Target size={32} />, title: "Innovation", description: "Pushing boundaries and challenging conventions to create the impossible." },
-  { icon: <Heart size={32} />, title: "Customer First", description: "Every decision starts and ends with how it impacts our customers." },
-  { icon: <Globe size={32} />, title: "Sustainability", description: "Building the future responsibly with eco-friendly practices and materials." },
+  { icon: <Award size={32} />, title: "Quality", description: "Sirf original aur behtareen quality products. Har item ko check karke deliver karte hain." },
+  { icon: <Target size={32} />, title: "Fast Delivery", description: "Pakistan bhar mein tez aur secure delivery. Aap ka order time pe pohanchana hamari zimmedari." },
+  { icon: <Heart size={32} />, title: "Customer First", description: "Customer ki khushi sabse zaroori. 24/7 support aur easy returns." },
+  { icon: <Globe size={32} />, title: "Trust", description: "Honest pricing, no hidden charges. Jo dikhaya wahi milega." },
 ];
 
 export default function AboutPage() {
@@ -39,15 +39,15 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
           >
             <span className="inline-block px-4 py-1.5 mb-6 rounded-full glass text-xs font-bold tracking-[0.2em] uppercase text-cyan-400 border border-cyan-500/20">
-              Our Story
+              Hamari Kahani
             </span>
             <h1 className="font-display text-5xl md:text-8xl font-black mb-8 leading-[1.1]">
-              <span className="text-gradient">We Build the</span> <br />
-              <span className="text-gradient-purple">Future</span>
+              <span className="text-gradient">Pakistan Ka</span> <br />
+              <span className="text-gradient-purple">Shandar Store</span>
             </h1>
             <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light">
-              From a small garage to a global phenomenon, Aura Tech is on a mission to redefine 
-              how humans interact with technology.
+              Ek chhoti si dukaan se shuru karke, aaj hum Pakistan bhar mein trusted electronics store ban gaye hain. 
+              Quality aur customer satisfaction hamara pehla usool hai.
             </p>
           </motion.div>
         </div>
@@ -66,10 +66,10 @@ export default function AboutPage() {
               <div className="w-16 h-16 rounded-2xl bg-cyan-500/20 flex items-center justify-center mb-6">
                 <Target className="text-cyan-400" size={32} />
               </div>
-              <h3 className="font-display text-3xl font-black mb-4">Our Mission</h3>
+              <h3 className="font-display text-3xl font-black mb-4">Hamara Mission</h3>
               <p className="text-gray-400 text-lg leading-relaxed">
-                To democratize premium technology, making cutting-edge innovation accessible to everyone while 
-                maintaining uncompromising quality and design excellence.
+                Har Pakistani ko behtareen quality electronics aur latest technology affordable price mein provide karna. 
+                Customer ki khushi aur satisfaction hamari pehli priority hai.
               </p>
             </motion.div>
             <motion.div
@@ -81,10 +81,10 @@ export default function AboutPage() {
               <div className="w-16 h-16 rounded-2xl bg-purple-500/20 flex items-center justify-center mb-6">
                 <Globe className="text-purple-400" size={32} />
               </div>
-              <h3 className="font-display text-3xl font-black mb-4">Our Vision</h3>
+              <h3 className="font-display text-3xl font-black mb-4">Hamara Vision</h3>
               <p className="text-gray-400 text-lg leading-relaxed">
-                A world where technology seamlessly enhances human potential, where every device is a work 
-                of art, and where innovation serves humanity's greatest aspirations.
+                Pakistan ka number 1 electronics store banna jahan har customer ko quality products, 
+                fast delivery aur excellent service mile. Har ghar mein technology ka access ho.
               </p>
             </motion.div>
           </div>
@@ -102,10 +102,10 @@ export default function AboutPage() {
           >
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-xs font-bold tracking-[0.2em] uppercase text-cyan-400 border border-cyan-500/20 mb-6">
               <Calendar size={14} />
-              Our Journey
+              Hamara Safar
             </span>
             <h2 className="font-display text-4xl md:text-6xl font-black">
-              The <span className="text-gradient">Timeline</span>
+              Hamari <span className="text-gradient">Kahani</span>
             </h2>
           </motion.div>
           
@@ -147,10 +147,10 @@ export default function AboutPage() {
             className="text-center mb-16"
           >
             <h2 className="font-display text-4xl md:text-6xl font-black mb-4">
-              Our <span className="text-gradient-purple">Values</span>
+              Hamari <span className="text-gradient-purple">Values</span>
             </h2>
             <p className="text-gray-400 max-w-lg mx-auto">
-              The principles that guide every decision we make.
+              Woh usool jo hamari har decision mein shamil hain.
             </p>
           </motion.div>
           
@@ -188,11 +188,11 @@ export default function AboutPage() {
               Leadership
             </span>
             <h2 className="font-display text-4xl md:text-6xl font-black mb-4">
-              Meet Our <span className="text-gradient">Team</span>
+              Hamari <span className="text-gradient">Team</span>
             </h2>
           </motion.div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {team.map((member, index) => (
               <TeamCard key={member.id} member={member} index={index} />
             ))}
@@ -212,16 +212,17 @@ export default function AboutPage() {
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-transparent to-purple-500/10" />
             <div className="relative z-10">
               <h2 className="font-display text-3xl md:text-5xl font-black mb-6">
-                Want to Join Our Team?
+                Hamare Saath Kaam Karna Chahte Hain?
               </h2>
               <p className="text-gray-400 mb-8 max-w-lg mx-auto">
-                We're always looking for passionate individuals who want to shape the future of technology.
+                Agar aap passionate hain aur technology ki duniya mein kuch karna chahte hain, 
+                toh humse zaroor rabta karein.
               </p>
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white text-black font-bold hover:bg-cyan-400 transition-colors"
               >
-                Get in Touch
+                Rabta Karein
                 <ArrowRight size={18} />
               </Link>
             </div>

@@ -9,27 +9,27 @@ import { faqs } from '@/data/faq';
 const contactInfo = [
   {
     icon: <Mail size={24} />,
-    title: "Email Us",
-    value: "hello@auratech.io",
-    description: "We'll respond within 24 hours",
+    title: "Email Karein",
+    value: "info@shandarstore.pk",
+    description: "24 ghantay mein jawab milega",
   },
   {
     icon: <Phone size={24} />,
-    title: "Call Us",
-    value: "+1 (888) AURA-TECH",
-    description: "Mon-Fri, 9am-6pm PST",
+    title: "Call Karein",
+    value: "+92 300 1234567",
+    description: "Subah 9 se raat 9 tak",
   },
   {
     icon: <MapPin size={24} />,
-    title: "Visit Us",
-    value: "648 Innovation Way",
-    description: "Neo Valley, CA 90210",
+    title: "Hamara Address",
+    value: "Karachi, Pakistan",
+    description: "Main Tariq Road",
   },
   {
     icon: <Clock size={24} />,
-    title: "Hours",
-    value: "24/7 Support",
-    description: "Premium members only",
+    title: "Timing",
+    value: "7 Din Khula",
+    description: "Subah 9 se raat 9 tak",
   },
 ];
 
@@ -69,15 +69,15 @@ export default function ContactPage() {
           >
             <span className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 rounded-full glass text-xs font-bold tracking-[0.2em] uppercase text-emerald-400 border border-emerald-500/20">
               <MessageSquare size={14} />
-              Get In Touch
+              Rabta Karein
             </span>
             <h1 className="font-display text-5xl md:text-8xl font-black mb-8 leading-[1.1]">
-              <span className="text-gradient">Let's</span>{" "}
-              <span className="text-gradient-purple">Connect</span>
+              <span className="text-gradient">Humse</span>{" "}
+              <span className="text-gradient-purple">Rabta Karein</span>
             </h1>
             <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light">
-              Have a question, feedback, or just want to say hello? 
-              We'd love to hear from you.
+              Koi sawal hai? Feedback dena chahte hain? 
+              Hum aap ki baat sunne ke liye tayyar hain.
             </p>
           </motion.div>
         </div>
@@ -119,7 +119,7 @@ export default function ContactPage() {
               viewport={{ once: true }}
             >
               <h2 className="font-display text-3xl font-black mb-8">
-                Send Us a <span className="text-gradient">Message</span>
+                Hamen <span className="text-gradient">Message</span> Karein
               </h2>
               
               {submitted ? (
@@ -131,15 +131,15 @@ export default function ContactPage() {
                   <div className="w-20 h-20 rounded-full bg-emerald-500/20 flex items-center justify-center mx-auto mb-6">
                     <Send className="text-emerald-400" size={32} />
                   </div>
-                  <h3 className="font-display text-2xl font-black mb-4">Message Sent!</h3>
+                  <h3 className="font-display text-2xl font-black mb-4">Message Bhej Di Gayi!</h3>
                   <p className="text-gray-400 mb-6">
-                    We've received your message and will get back to you within 24 hours.
+                    Aap ka message mil gaya hai. Hum 24 ghantay mein jawab denge.
                   </p>
                   <button
                     onClick={() => setSubmitted(false)}
                     className="px-6 py-3 rounded-full glass hover:bg-white/10 transition-all"
                   >
-                    Send Another Message
+                    Aur Message Bhejein
                   </button>
                 </motion.div>
               ) : (
@@ -147,7 +147,7 @@ export default function ContactPage() {
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-bold uppercase tracking-widest text-gray-400 mb-2">
-                        Your Name
+                        Aap Ka Naam
                       </label>
                       <input
                         type="text"
@@ -155,12 +155,12 @@ export default function ContactPage() {
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         className="w-full bg-black/40 border border-white/10 rounded-2xl p-4 focus:border-cyan-500 outline-none transition-all"
-                        placeholder="John Doe"
+                        placeholder="Ahmed Khan"
                       />
                     </div>
                     <div>
                       <label className="block text-sm font-bold uppercase tracking-widest text-gray-400 mb-2">
-                        Email Address
+                        Email
                       </label>
                       <input
                         type="email"
@@ -174,7 +174,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <label className="block text-sm font-bold uppercase tracking-widest text-gray-400 mb-2">
-                      Subject
+                      Subject (Mauzu)
                     </label>
                     <input
                       type="text"
@@ -182,7 +182,7 @@ export default function ContactPage() {
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                       className="w-full bg-black/40 border border-white/10 rounded-2xl p-4 focus:border-cyan-500 outline-none transition-all"
-                      placeholder="How can we help?"
+                      placeholder="Hum kaise madad kar sakte hain?"
                     />
                   </div>
                   <div>
@@ -195,7 +195,7 @@ export default function ContactPage() {
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       className="w-full bg-black/40 border border-white/10 rounded-2xl p-4 focus:border-cyan-500 outline-none transition-all resize-none"
-                      placeholder="Tell us more about your inquiry..."
+                      placeholder="Apni baat detail mein batayein..."
                     />
                   </div>
                   <button
@@ -206,11 +206,11 @@ export default function ContactPage() {
                     {isSubmitting ? (
                       <>
                         <div className="w-5 h-5 border-2 border-black/20 border-t-black rounded-full animate-spin" />
-                        Sending...
+                        Bhej Rahe Hain...
                       </>
                     ) : (
                       <>
-                        Send Message
+                        Message Bhejein
                         <Send size={18} />
                       </>
                     )}
@@ -226,7 +226,7 @@ export default function ContactPage() {
               viewport={{ once: true }}
             >
               <h2 className="font-display text-3xl font-black mb-8">
-                Find <span className="text-gradient-purple">Us</span>
+                Hamara <span className="text-gradient-purple">Location</span>
               </h2>
               
               <div className="glass-morphism rounded-[32px] overflow-hidden h-[500px] relative">
@@ -258,8 +258,8 @@ export default function ContactPage() {
                     </motion.div>
                     <div className="absolute top-full mt-4 left-1/2 -translate-x-1/2 whitespace-nowrap">
                       <div className="glass-dark rounded-xl px-4 py-2 text-center">
-                        <p className="font-bold text-sm">Aura Tech HQ</p>
-                        <p className="text-gray-500 text-xs">Neo Valley, CA</p>
+                        <p className="font-bold text-sm">Shandar Store</p>
+                        <p className="text-gray-500 text-xs">Karachi, Pakistan</p>
                       </div>
                     </div>
                   </div>
@@ -286,7 +286,7 @@ export default function ContactPage() {
             className="text-center mb-12"
           >
             <h2 className="font-display text-3xl font-black">
-              Quick <span className="text-gradient">Answers</span>
+              Sawalat Aur <span className="text-gradient">Jawabat</span>
             </h2>
           </motion.div>
           <div className="max-w-3xl mx-auto">

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { Twitter, Linkedin } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
 
 interface TeamMember {
   id: number;
@@ -10,7 +10,7 @@ interface TeamMember {
   avatar: string;
   bio: string;
   social: {
-    twitter: string;
+    twitter?: string;
     linkedin: string;
   };
 }
@@ -33,14 +33,6 @@ export default function TeamCard({ member, index = 0 }: { member: TeamMember; in
           {/* Hover Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-6">
             <div className="flex gap-3">
-              <a
-                href={member.social.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-full glass hover:bg-cyan-500 hover:text-black transition-all"
-              >
-                <Twitter size={18} />
-              </a>
               <a
                 href={member.social.linkedin}
                 target="_blank"
