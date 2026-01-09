@@ -102,9 +102,13 @@ export default function CartDrawer({ isOpen, onClose }: { isOpen: boolean; onClo
                     ${getTotalPrice().toLocaleString()}
                   </span>
                 </div>
-                <button className="w-full py-4 rounded-2xl bg-white text-black font-bold text-sm tracking-[0.2em] uppercase hover:bg-cyan-400 transition-all shadow-xl shadow-cyan-500/10">
+                <a 
+                  href="/checkout"
+                  onClick={onClose}
+                  className="block w-full py-4 rounded-2xl bg-white text-black font-bold text-sm tracking-[0.2em] uppercase hover:bg-cyan-400 transition-all shadow-xl shadow-cyan-500/10 text-center"
+                >
                   Secure Checkout
-                </button>
+                </a>
               </div>
             )}
           </motion.div>
